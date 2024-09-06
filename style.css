@@ -1,0 +1,88 @@
+/*
+Theme Name: The Points World
+Theme URI: https://khagendralama.com.np
+Author: Khagendra Lama
+Author URI: https://khagendralama.com.np
+Description: An official WordPress theme for The Points World
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: thepointsworld
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Styling for the My Account Dashboard */
+.tpw-welcome-message {
+    margin-bottom: 20px;
+}
+
+.tpw-welcome-message p {
+    font-size: 18px;
+    color: #333;
+}
+
+.tpw-dashboard-description {
+    margin-bottom: 20px;
+}
+
+.tpw-dashboard-description p {
+    font-size: 16px;
+    color: #666;
+}
+
+.tpw-account-actions {
+    margin-top: 20px;
+}
+
+.tpw-account-actions a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #007cba;
+    text-decoration: none;
+}
+
+.tpw-account-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Course single page */
+.tpw-hidden {
+    display: none;
+}
+
+.tpw-course-nav-active, .tpw-course-nav-active:hover {
+    background-color: #4c1d95;
+    color: #fff;
+}
+
+.locked {  
+    position: relative;
+    cursor: unset;
+}  
+
+.tooltip {  
+    visibility: hidden;  
+    width: 75px;
+    background-color: #f59e0b;
+    color: #fff; 
+    text-align: center;  
+    border-radius: 3px;  
+    padding: 5px;  
+    position: absolute;  
+    z-index: 1;  
+    bottom: 23%;
+    right: 51px;
+    opacity: 0;  
+    transition: opacity 0.3s;  
+}  
+
+.locked:hover .tooltip {  
+    visibility: visible;
+    opacity: 1;  
+}
+
+.selected {
+    color: #FFD700;
+}

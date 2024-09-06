@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "build:css": "tailwindcss build -i src/input.css -o dist/output.css",
+        "watch:css": "tailwindcss build -i src/input.css -o dist/output.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.4"
+    },
+    "dependencies": {
+        "@tailwindcss/typography": "^0.5.13"
+    }
+}
