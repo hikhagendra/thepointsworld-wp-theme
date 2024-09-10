@@ -120,3 +120,6 @@ function handle_ajax_review_submission() {
         wp_send_json_error();
     }
 }
+
+// Theme Supports
+add_theme_support( 'custom-logo' );

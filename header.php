@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Points World</title>
     <?php wp_head(); ?>
-</head <?php body_class(); ?>>
-<body>
-    <header class="tpw-bg-primary-dark tpw-text-white tpw-font-primary">
-        <div class="tpw-container tpw-mx-auto tpw-px-4 tpw-py-4 tpw-flex tpw-justify-between tpw-items-center">
+</head>
+<body <?php body_class('tpw-font-primary'); ?>>
+    <header class="tpw-bg-white tpw-border-b tpw-border-gray-300">
+        <div class="tpw-container tpw-mx-auto tpw-py-6 tpw-flex tpw-justify-between tpw-items-center">
             <!-- Logo -->
             <div class="tpw-flex tpw-items-center">
-                <!-- <img src="logo.png" alt="Logo" class="tpw-h-8 tpw-w-8 tpw-mr-2"> -->
-                <span class="tpw-text-xl tpw-font-bold">Your Logo</span>
+                <?php echo get_custom_logo(); ?>
             </div>
             <!-- Navigation Menu -->
             <nav class="tpw-flex tpw-items-center tpw-space-x-4">
@@ -20,9 +19,9 @@
                 wp_nav_menu(array(
                     'theme_location' => 'header-menu',
                     'container' => false,
-                    'menu_class' => 'tpw-flex tpw-space-x-10',
+                    'menu_class' => 'tpw-flex tpw-space-x-10 tpw-mr-6',
                     'walker' => new Tailwind_Nav_Walker(),
-                    'link_class' => 'tpw-text-white'
+                    'link_class' => 'tpw-text-black tpw-text-lg'
                 ));
                 ?>
                 <!-- WooCommerce My Account/Login/Signup Buttons -->
@@ -37,8 +36,7 @@
                         </a>
                     </div>
                 <?php else : ?>
-                    <a href="<?php echo wc_get_page_permalink('myaccount'); ?>" class="tpw-bg-primary tpw-hover:tpw-bg-primary-dark tpw-text-white tpw-font-bold tpw-py-2 tpw-px-4 tpw-rounded">Login</a>
-                    <a href="<?php echo wc_get_page_permalink('myaccount'); ?>" class="tpw-bg-secondary tpw-hover:tpw-bg-secondary-dark tpw-text-white tpw-font-bold tpw-py-2 tpw-px-4 tpw-rounded">Signup</a>
+                    <a href="<?php echo wc_get_page_permalink('myaccount'); ?>" class="tpw-bg-primary hover:tpw-bg-secondary tpw-text-white hover:tpw-text-white tpw-py-3 tpw-px-8 tpw-rounded">Login</a>
                 <?php endif; ?>
             </nav>
         </div>

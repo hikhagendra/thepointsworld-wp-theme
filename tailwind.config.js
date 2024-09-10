@@ -13,18 +13,21 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: '#6d28d9',
-          DEFAULT: '#4c1d95',
-          dark: '#3b0d70',
+          DEFAULT: '#1D4E89',
         },
         secondary: {
-          light: '#fbbf24',
-          DEFAULT: '#f59e0b',
-          dark: '#b45309',
+          DEFAULT: '#008080',
         },
+        accent: {
+          DEFAULT: '#FFD700',
+        },
+        neutral: {
+          DEFAULT: '#F5F5F5',
+        }
       },
       fontFamily: {
-        primary: ['Roboto', 'sans-serif'],
+        primary: ['Lexend', 'sans-serif'],
+        secondary: ['Merriweather', 'serif'],
       },
     },
   },
