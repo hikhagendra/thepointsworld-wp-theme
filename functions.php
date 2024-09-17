@@ -22,6 +22,9 @@ function tpw_scripts() {
     wp_enqueue_style('tpw_custom_style', get_template_directory_uri() . '/style.css', array(), _S_VERSION);
 
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
+    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, true);
+    wp_enqueue_script( 'slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
 
     // Localize script to pass the AJAX URL
     wp_localize_script('script', 'review_ajax_obj', array(
@@ -123,3 +126,4 @@ function handle_ajax_review_submission() {
 
 // Theme Supports
 add_theme_support( 'custom-logo' );
+

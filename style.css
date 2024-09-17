@@ -18,6 +18,11 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
 /* Styling for the My Account Dashboard */
 .tpw-welcome-message {
     margin-bottom: 20px;
@@ -91,4 +96,30 @@ h1 {
 
 .selected {
     color: #FFD700;
+}
+
+/* Styling for homepage */
+.ticked-mark li {
+    list-style-image: url(icons/green-tick.svg);
+    padding-inline-start: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.swiper-container{
+    width: 100%;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+
+.swiper-wrapper {
+    width: 50%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+.swiper-pagination-bullet {
+    background: #008080 !important;
 }

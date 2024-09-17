@@ -19,4 +19,75 @@ get_header();
 </section>
 <!-- Hero Section End -->
 
+<!-- What You'll Learn Start -->
+<section class="tpw-bg-neutral">
+    <div class="tpw-container tpw-mx-auto tpw-py-20">
+        <h2 class="tpw-text-center">What You'll Learn</h2>
+        <ul class="tpw-grid tpw-grid-cols-2 tpw-mt-8 tpw-mx-8 tpw-leading-10 tpw-font-light ticked-mark">
+            <li>Master the art of finding the best travel deals.</li>
+            <li>Discover tips to maximize cashback and rewards.</li>
+            <li>Get insider advice to plan your dream trip on a budget.</li>
+            <li>Master the art of finding the best travel deals.</li>
+            <li>Discover tips to maximize cashback and rewards.</li>
+            <li>Get insider advice to plan your dream trip on a budget.</li>
+            <li>Master the art of finding the best travel deals.</li>
+            <li>Discover tips to maximize cashback and rewards.</li>
+            <li>Get insider advice to plan your dream trip on a budget.</li>
+            <li>Master the art of finding the best travel deals.</li>
+        </ul>
+    </div>
+</section>
+<!-- What You'll Learn End -->
+
+<!-- Success Stories Start -->
+ <section>
+    <div class="tpw-container tpw-mx-auto tpw-py-20">
+        <h2 class="tpw-text-center">Success Stories</h2>
+        
+        <div class="tpw-w-full tpw-relative tpw-mt-16">
+            <div class="swiper multiple-slide-carousel swiper-container relative">
+                <div class="swiper-wrapper mb-16">
+                    <div class="swiper-slide">
+                        <div class="tpw-shadow-lg tpw-rounded-2xl tpw-p-12 tpw-flex tpw-flex-col tpw-justify-center">
+                            <p class="tpw-font-light tpw-text-xl">Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction.</p>
+                            <div class="tpw-flex tpw-items-center tpw-justify-end tpw-mt-8">
+                                <img class="tpw-rounded-full tpw-w-16 tpw-mr-4" src="/wp-content/uploads/2024/09/testomonial.jpg" alt="Commenter">
+                                <p class="tpw-text-gray-500">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tpw-shadow-lg tpw-rounded-2xl tpw-p-12 tpw-flex tpw-flex-col tpw-justify-center">
+                            <p class="tpw-font-light tpw-text-xl">Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction.</p>
+                            <div class="tpw-flex tpw-items-center tpw-justify-end tpw-mt-8">
+                                <img class="tpw-rounded-full tpw-w-16 tpw-mr-4" src="/wp-content/uploads/2024/09/testomonial.jpg" alt="Commenter">
+                                <p class="tpw-text-gray-500">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tpw-shadow-lg tpw-rounded-2xl tpw-p-12 tpw-flex tpw-flex-col tpw-justify-center">
+                            <p class="tpw-font-light tpw-text-xl">Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction.</p>
+                            <div class="tpw-flex tpw-items-center tpw-justify-end tpw-mt-8">
+                                <img class="tpw-rounded-full tpw-w-16 tpw-mr-4" src="/wp-content/uploads/2024/09/testomonial.jpg" alt="Commenter">
+                                <p class="tpw-text-gray-500">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tpw-shadow-lg tpw-rounded-2xl tpw-p-12 tpw-flex tpw-flex-col tpw-justify-center">
+                            <p class="tpw-font-light tpw-text-xl">Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction of the cost! Thanks to your course, I’ve traveled to five countries at a fraction.</p>
+                            <div class="tpw-flex tpw-items-center tpw-justify-end tpw-mt-8">
+                                <img class="tpw-rounded-full tpw-w-16 tpw-mr-4" src="/wp-content/uploads/2024/09/testomonial.jpg" alt="Commenter">
+                                <p class="tpw-text-gray-500">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipper-pagination tpw-flex tpw-justify-center"></div>
+            </div>
+        </div>
+ </section>
+<!-- Success Stories End -->
+
 <?php get_footer(); ?>
