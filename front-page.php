@@ -40,7 +40,7 @@ get_header();
 <!-- What You'll Learn End -->
 
 <!-- Success Stories Start -->
- <section>
+<section>
     <div class="tpw-container tpw-mx-auto tpw-py-20">
         <h2 class="tpw-text-center">Success Stories</h2>
         
@@ -87,7 +87,23 @@ get_header();
                 <div class="swipper-pagination tpw-flex tpw-justify-center"></div>
             </div>
         </div>
- </section>
+    </div>
+</section>
 <!-- Success Stories End -->
+
+<!-- Ready to Get Started Start -->
+<section class="tpw-bg-[url('/wp-content/uploads/2024/09/call-to-action.jpg')] tpw-bg-center tpw-bg-no-repeat tpw-bg-cover">
+    <div class="tpw-w-full tpw-h-full tpw-bg-primaryOverlay">
+        <div class="tpw-container tpw-mx-auto tpw-py-20">
+            <h2 class="tpw-text-center tpw-text-white">Ready to Get Started?</h2>
+
+            <div class="tpw-flex tpw-justify-center tpw-mt-12">
+                <a href="#" class="tpw-border-2 tpw-rounded tpw-text-white hover:tpw-bg-white hover:tpw-text-primary tpw-text-lg tpw-mt-6 tpw-px-8 tpw-py-3 tpw-border-white tpw-inline-block tpw-mx-6">Enroll in the Course</a>
+                <a href="#" class="tpw-border-2 tpw-rounded tpw-text-white hover:tpw-bg-white hover:tpw-text-primary tpw-text-lg tpw-mt-6 tpw-px-8 tpw-py-3 tpw-border-white tpw-inline-block tpw-mx-6">Schedule a Consulting Session</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Ready to Get Started End -->
 
 <?php get_footer(); ?>

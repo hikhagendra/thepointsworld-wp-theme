@@ -23,7 +23,10 @@ module.exports = {
         },
         neutral: {
           DEFAULT: '#F5F5F5',
-        }
+        },
+        primaryOverlay: {
+          DEFAULT: '#1d4e89b3',
+        },
       },
       fontFamily: {
         primary: ['Lexend', 'sans-serif'],
