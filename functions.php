@@ -40,6 +40,7 @@ add_action('wp_enqueue_scripts', 'tpw_scripts');
  */
 function register_menus() {
     register_nav_menu('header-menu', __('Header Menu'));
+    register_nav_menu( 'footer-menu', __('Footer Menu'));
 }
 add_action('init', 'register_menus');
 
@@ -54,10 +55,10 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu {
 
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
         $classes = empty($item->classes) ? array() : (array) $item->classes;
-        $classes[] = 'tpw-text-gray-300 tpw-hover:tpw-text-white';
-
+        $classes[] = '';
+        $item_classes = $args->item_class ? $args->item_class : '';
         $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item));
-        $class_names = ' class="' . esc_attr($class_names) . '"';
+        $class_names = ' class="' . esc_attr($class_names) . ' ' . $item_classes . '"';
 
         $output .= '<li' . $class_names .'>';
 

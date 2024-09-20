@@ -21,7 +21,8 @@
                     'container' => false,
                     'menu_class' => 'tpw-flex tpw-space-x-10 tpw-mr-6',
                     'walker' => new Tailwind_Nav_Walker(),
-                    'link_class' => 'tpw-text-black tpw-text-lg'
+                    'link_class' => 'tpw-text-black tpw-text-lg',
+                    'item_class' => '',
                 ));
                 ?>
                 <!-- WooCommerce My Account/Login/Signup Buttons -->
