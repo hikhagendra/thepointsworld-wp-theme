@@ -17,7 +17,7 @@
  * Enque scripts and styles
  */
 function tpw_scripts() {
-    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+    wp_enqueue_style('material-icon', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0');
     wp_enqueue_style('tpw_tailwind_style', get_template_directory_uri() . '/dist/output.css', array(), _S_VERSION);
     wp_enqueue_style('tpw_custom_style', get_template_directory_uri() . '/style.css', array(), _S_VERSION);
 

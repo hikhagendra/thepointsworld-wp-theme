@@ -16,11 +16,11 @@ $has_purchased = wc_customer_bought_product($current_user->user_email, $current_
                     $chapter_title = get_sub_field('tpw_chapter_title');
                     $chapter_id = sanitize_title($chapter_title); ?>
                         <li class="tpw-m-0">
-                            <a href="#<?php echo $chapter_id; ?>" class="chapter-nav-item tpw-block tpw-py-4 hover:tpw-bg-gray-200 tpw-text-black hover:tpw-text-black tpw-px-4 <?php echo !$has_purchased ? 'locked' : ''; ?> <?php if($index == 0) {echo 'tpw-course-nav-active';} ?>" data-chapter="<?php echo $index; ?>" <?php echo !$has_purchased ? 'data-tooltip="Locked"' : ''; ?>>
+                            <a href="#<?php echo $chapter_id; ?>" class="chapter-nav-item tpw-block tpw-py-4 hover:tpw-bg-gray-200 tpw-text-black hover:tpw-text-black tpw-px-4 <?php echo !$has_purchased ? 'locked' : ''; ?> <?php if($index == 0) {echo 'tpw-course-nav-active';} ?>" data-chapter="<?php echo $index; ?>">
                                 <?php echo $chapter_title; ?>
 
                                 <?php if (!$has_purchased && $index > 0): ?>
-                                    <span class="lock-icon tpw-ml-2 tpw-float-right"><i class="fas fa-lock"></i></span>
+                                    <span class="lock-icon tpw-ml-2 tpw-float-right"><span class="material-symbols-outlined">lock</span></span>
                                 <?php endif; ?>
                             </a>
                         </li>

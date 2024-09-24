@@ -41,31 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         showChapter(0);
     }
 
-    // Tooltip for locked courses
-    const lockedItems = document.querySelectorAll('.chapter-nav-item.locked');
-
-    lockedItems.forEach((item, index) => {
-        if (index > 0) { // Skip the first chapter
-            const tooltipText = item.getAttribute('data-tooltip');
-
-            // Create tooltip element
-            const tooltip = document.createElement('span');
-            tooltip.className = 'tooltip';
-            tooltip.innerText = tooltipText;
-
-            // Append tooltip to the locked item
-            item.appendChild(tooltip);
-
-            item.addEventListener('click', function(e) {
-                e.preventDefault(); // Prevent default action on click
-                // Optionally, you can add any additional behavior here
-            });
-        } else {
-            item.classList.remove('locked'); // Remove 'locked' class for the first chapter
-            item.removeAttribute('data-tooltip'); // Remove tooltip attribute for the first chapter
-        }
-    });
-
     // Course Review
     const reviewForm = document.getElementById('review-form');
     const thankYouMessage = document.getElementById('thank-you-message');
