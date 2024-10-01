@@ -103,7 +103,7 @@ $has_purchased = wc_customer_bought_product($current_user->user_email, $current_
                             <div class="tpw-star-rating">
                                 <?php for ($i = 1; $i <= 5; $i++): ?>
                                     <input type="radio" id="star-<?php echo $i; ?>" name="review_rating" value="<?php echo $i; ?>" class="tpw-hidden">
-                                    <label for="star-<?php echo $i; ?>" class="tpw-inline-block tpw-text-2xl tpw-cursor-pointer"><i class="far fa-star"></i></label>
+                                    <label for="star-<?php echo $i; ?>" class="tpw-inline-block tpw-text-2xl tpw-cursor-pointer"><span class="material-symbols-outlined">kid_star</span></label>
                                 <?php endfor; ?>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ $has_purchased = wc_customer_bought_product($current_user->user_email, $current_
                             <label for="review_content" class="tpw-block tpw-font-semibold tpw-mb-2">Your Review:</label>
                             <textarea id="review_content" name="review_content" class="tpw-w-full tpw-p-2 tpw-border tpw-rounded" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="tpw-bg-primary tpw-text-white tpw-py-2 tpw-px-4 tpw-rounded tpw-font-semibold tpw-hover:bg-primary-dark">Submit Review</button>
+                        <button type="submit" class="tpw-bg-primary tpw-text-white tpw-py-2 tpw-px-4 tpw-rounded tpw-font-semibold hover:tpw-bg-secondary">Submit Review</button>
                     </form>
                     <div id="thank-you-message" class="tpw-hidden tpw-mt-4 tpw-text-green-500 tpw-font-semibold">Thank you for your review!</div>
                 </div>
