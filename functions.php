@@ -7,9 +7,9 @@
  * @package thepointsworld
  */
 
- if(!defined('_S_VERSION')) {
+ if(!defined('TPW_VERSION')) {
     // Replace the version number of the theme of each resease
-    define('_S_VERSION', '1.0.0');
+    define('TPW_VERSION', '1.0.0');
  }
 
 
@@ -17,13 +17,13 @@
  * Enque scripts and styles
  */
 function tpw_scripts() {
-    wp_enqueue_style('material-icon', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0');
-    wp_enqueue_style('tpw_tailwind_style', get_template_directory_uri() . '/dist/output.css', array(), _S_VERSION);
-    wp_enqueue_style('tpw_custom_style', get_template_directory_uri() . '/style.css', array(), _S_VERSION);
+    wp_enqueue_style('material-icon', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,1,0');
+    wp_enqueue_style('tpw_tailwind_style', get_template_directory_uri() . '/dist/output.css', array(), TPW_VERSION);
+    wp_enqueue_style('tpw_custom_style', get_template_directory_uri() . '/style.css', array(), TPW_VERSION);
 
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/dist/bundle.js', array(), _S_VERSION, true );
     wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, true);
+    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), TPW_VERSION, true);
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/dist/bundle.js', array(), TPW_VERSION, true );
 
     // Localize script to pass the AJAX URL
     wp_localize_script('script', 'review_ajax_obj', array(
