@@ -30,19 +30,19 @@ if(reviewForm) {
             alert('An error occurred. Please try again.');
         });
     });
-}
 
-// Change star icons on click
-starInputs.forEach(input => {
-    input.addEventListener('change', function() {
-        const selectedValue = this.value;
-        starInputs.forEach(star => {
-            const starLabel = star.nextElementSibling.querySelector('span');
-            if (star.value <= selectedValue) {
-                starLabel.classList.add('selected');
-            } else {
-                starLabel.classList.remove('selected');
-            }
+    // Change star icons on click
+    starInputs.forEach(input => {
+        input.addEventListener('change', function() {
+            const selectedValue = this.value;
+            starInputs.forEach(star => {
+                const starLabel = star.nextElementSibling.querySelector('span');
+                if (star.value <= selectedValue) {
+                    starLabel.classList.add('selected');
+                } else {
+                    starLabel.classList.remove('selected');
+                }
+            });
         });
     });
-});
+}

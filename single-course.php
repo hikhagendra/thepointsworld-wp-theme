@@ -93,6 +93,52 @@ $has_purchased = wc_customer_bought_product($current_user->user_email, $current_
                     </div>
                 <?php endif; ?>
             </article>
+
+            <!-- Reviews List Start -->
+            <div class="tpw-mx-8 tpw-my-16">
+                <h3 class="tpw-text-2xl tpw-font-bold tpw-mb-4">People Loves Us ❤️</h3>
+                <div class="tpw-flex tpw-p-4 tpw-shadow tpw-my-8 tpw-border">
+                    <div>
+                        <img class="tpw-rounded-full" src="/wp-content/uploads/2024/10/placeholder-profile-image.png" alt="John Doe" width="200" height="200">
+                    </div>
+                    <div class="tpw-px-6">
+                        <h4 class="tpw-text-lg">John Doe</h4>
+                        <p class="tpw-font-light tpw-text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque cumque recusandae, sunt sed error. Atque cumque placeat aliquam quis quia ex in, nulla velit at tenetur praesentium dicta iusto minus, consectetur animi error expedita, necessitatibus qui. Sint, aut facilis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, ad. Natus modi tenetur odit culpa neque quisquam fugiat? Suscipit, officia.</p>
+                    </div>
+                    <div>
+                        <div class="tpw-flex">
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                        </div>
+                        <p class="tpw-text-gray-500 tpw-text-center tpw-mt-4">Oct 03, 2024</p>
+                    </div>
+                </div>
+                <div class="tpw-flex tpw-p-4 tpw-shadow tpw-my-8 tpw-border">
+                    <div>
+                        <img class="tpw-rounded-full" src="/wp-content/uploads/2024/10/placeholder-profile-image.png" alt="John Doe" width="200" height="200">
+                    </div>
+                    <div class="tpw-px-6">
+                        <h4 class="tpw-text-lg">John Doe</h4>
+                        <p class="tpw-font-light tpw-text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque cumque recusandae, sunt sed error. Atque cumque placeat aliquam quis quia ex in, nulla velit at tenetur praesentium dicta iusto minus, consectetur animi error expedita, necessitatibus qui. Sint, aut facilis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, ad. Natus modi tenetur odit culpa neque quisquam fugiat? Suscipit, officia.</p>
+                    </div>
+                    <div>
+                        <div class="tpw-flex">
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                            <span class="material-symbols-outlined selected">kid_star</span>
+                        </div>
+                        <p class="tpw-text-gray-500 tpw-text-center tpw-mt-4">Oct 03, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Reviews List End -->
+
+            <!-- Leave a Review Start -->
             <?php if (is_user_logged_in() && $has_purchased): ?>
                 <div id="review-form-wrapper" class="tpw-m-8">
                     <h3 class="tpw-text-2xl tpw-font-bold tpw-mb-4">Leave a Review</h3>
@@ -116,6 +162,7 @@ $has_purchased = wc_customer_bought_product($current_user->user_email, $current_
                     <div id="thank-you-message" class="tpw-hidden tpw-mt-4 tpw-text-green-500 tpw-font-semibold">Thank you for your review!</div>
                 </div>
             <?php endif; ?>
+            <!-- Leave a Review End -->
         <?php endwhile; endif; ?>
     </div>
 </div>
