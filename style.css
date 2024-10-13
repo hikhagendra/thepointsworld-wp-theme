@@ -24,6 +24,29 @@ h2 {
 }
 
 /* Styling for the My Account Dashboard */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 100%;
+}
+
+.woo-dashboard-menu-item {
+    border: 1px solid #ffffff;
+    border-radius: 22px;
+}
+
+.woo-dashboard-menu-item.is-active {
+    background-color: #f0f0f0;
+    border-color: #d8d8d8;
+}
+
+.woo-dashboard-menu-item:hover a {
+    color: #777777;
+}
+
+.woo-dashboard-menu-item a {
+    color: #333;
+    display: block;
+}
+
 .tpw-welcome-message {
     margin-bottom: 20px;
 }

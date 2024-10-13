@@ -16,8 +16,8 @@
  */
 
 defined( 'ABSPATH' ) || exit; ?>
-<div class="tpw-flex tpw-flex-wrap tpw-border tpw-border-gray-300 tpw-rounded-lg tpw-bg-white tpw-shadow-lg tpw-mx-auto tpw-max-w-6xl tpw-mt-8">
-	<aside class="tpw-w-full md:tpw-w-1/4 tpw-bg-gray-100 tpw-p-4">
+<div class="tpw-flex tpw-flex-wrap tpw-bg-white tpw-mx-auto tpw-max-w-7xl tpw-mt-8">
+	<aside class="tpw-w-full md:tpw-w-1/4 tpw-p-4 tpw-border-r-2">
 		<?php
 		/**
 		 * My Account navigation.
@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit; ?>
 		 */
 		do_action( 'woocommerce_account_navigation' ); ?>
 	</aside>
-	<main class="tpw-w-full md:tpw-w-3/4 tpw-bg-white tpw-p-4 tpw-shadow-lg">
+	<main class="tpw-w-full md:tpw-w-3/4 tpw-bg-white tpw-p-4">
 		<div class="woocommerce-MyAccount-content">
 			<?php
 				/**

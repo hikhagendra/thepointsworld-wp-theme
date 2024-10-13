@@ -1188,24 +1188,14 @@ a:hover{
   margin-right: auto;
 }
 
-.tpw-my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .tpw-my-16{
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.tpw-my-24{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.tpw-my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.tpw-my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .tpw-my-8{
@@ -1313,10 +1303,6 @@ a:hover{
   width: 75%;
 }
 
-.tpw-w-36{
-  width: 9rem;
-}
-
 .tpw-w-full{
   width: 100%;
 }
@@ -1335,6 +1321,10 @@ a:hover{
 
 .tpw-max-w-xl{
   max-width: 36rem;
+}
+
+.tpw-max-w-7xl{
+  max-width: 80rem;
 }
 
 .tpw-cursor-pointer{
@@ -1417,10 +1407,6 @@ a:hover{
   border-radius: 9999px;
 }
 
-.tpw-rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .tpw-border{
   border-width: 1px;
 }
@@ -1431,6 +1417,14 @@ a:hover{
 
 .tpw-border-b{
   border-bottom-width: 1px;
+}
+
+.tpw-border-r-4{
+  border-right-width: 4px;
+}
+
+.tpw-border-r-2{
+  border-right-width: 2px;
 }
 
 .tpw-border-gray-300{
@@ -1519,6 +1513,11 @@ a:hover{
   padding-right: 1rem;
 }
 
+.tpw-px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .tpw-px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1557,16 +1556,6 @@ a:hover{
 .tpw-py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.tpw-px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.tpw-px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .tpw-pt-20{

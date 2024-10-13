@@ -83,9 +83,8 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu {
 function customize_my_account_menu_links($menu_links) {
     // Remove specific items
     unset($menu_links['downloads']);
-    // Add or remove other items as needed
-    // unset($menu_links['orders']); // Example to remove 'Orders'
-    // unset($menu_links['edit-address']); // Example to remove 'Addresses'
+    unset($menu_links['orders']);
+    unset($menu_links['edit-address']);
 
     return $menu_links;
 }
